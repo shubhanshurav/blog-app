@@ -1,0 +1,67 @@
+export const blogData = [
+    {
+        id: "the-future-of-web-development",
+        title: "The Future of Web Development",
+        description: "Explore the latest trends and technologies shaping the future of web development.",
+        heroImage: "/images/future-web-dev.jpg",
+        altText: "A futuristic representation of web development",
+        metaTitle: "The Future of Web Development - Blog",
+        metaDescription: "Discover the cutting-edge trends and tools that are revolutionizing web development.",
+    },
+    {
+        id: "mastering-react-in-2023",
+        title: "Mastering React in 2023",
+        description: "A comprehensive guide to mastering React and building dynamic web applications.",
+        heroImage: "/images/mastering-react.jpg",
+        altText: "React logo with code snippets in the background",
+        metaTitle: "Mastering React in 2023 - Blog",
+        metaDescription: "Learn how to become proficient in React and create powerful web applications.",
+    },
+    {
+        id: "top-10-javascript-libraries",
+        title: "Top 10 JavaScript Libraries",
+        description: "A curated list of the top 10 JavaScript libraries every developer should know.",
+        heroImage: "/images/js-libraries.jpg",
+        altText: "Icons of popular JavaScript libraries",
+        metaTitle: "Top 10 JavaScript Libraries - Blog",
+        metaDescription: "Explore the most popular JavaScript libraries and their use cases.",
+    },
+    {
+        id: "building-scalable-applications",
+        title: "Building Scalable Applications",
+        description: "Tips and best practices for building scalable and maintainable applications.",
+        heroImage: "/images/scalable-apps.jpg",
+        altText: "A scalable architecture diagram",
+        metaTitle: "Building Scalable Applications - Blog",
+        metaDescription: "Learn how to design and develop applications that scale effectively.",
+    },
+    {
+        id: "understanding-typescript",
+        title: "Understanding TypeScript",
+        description: "An introduction to TypeScript and why it's essential for modern web development.",
+        heroImage: "/images/typescript-intro.jpg",
+        altText: "TypeScript logo with code editor in the background",
+        metaTitle: "Understanding TypeScript - Blog",
+        metaDescription: "Get started with TypeScript and understand its benefits for web development.",
+    },
+    {
+        id: "css-grid-vs-flexbox",
+        title: "CSS Grid vs Flexbox",
+        description: "A comparison of CSS Grid and Flexbox for layout design.",
+        heroImage: "/images/css-grid-flexbox.jpg",
+        altText: "CSS Grid and Flexbox layout examples",
+        metaTitle: "CSS Grid vs Flexbox - Blog",
+        metaDescription: "Learn the differences between CSS Grid and Flexbox for responsive design.",
+    },
+    {
+        id: "devops-for-developers",
+        title: "DevOps for Developers",
+        description: "Understanding the DevOps culture and its impact on software development.",
+        heroImage: "/images/devops.jpg",
+        altText: "DevOps pipeline illustration",
+        metaTitle: "DevOps for Developers - Blog",
+        metaDescription: "Explore the principles of DevOps and how it enhances collaboration.",
+    }
+];
+
+export default blogData;
