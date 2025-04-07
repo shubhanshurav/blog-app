@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import blogData from "../../../lib/BlogData";
 import Image from "next/image";
