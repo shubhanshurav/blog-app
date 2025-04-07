@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import blogData from "../../../lib/BlogData";
 import Image from "next/image";
+import { useParams } from "next/navigation";
 import { Metadata } from "next";
 
 export async function generateMetadata({
@@ -21,7 +23,7 @@ export async function generateMetadata({
   };
 }
 
-const BlogPage = ({ params }: { params: { blogId: string } }) => {
+const BlogPage = () => {
   const blogIds = [
     "the-future-of-web-development",
     "mastering-react-in-2023",
@@ -32,10 +34,10 @@ const BlogPage = ({ params }: { params: { blogId: string } }) => {
     "devops-for-developers",
   ];
 
-  const { blogId } = params;
+  const { blogId } = useParams();
 
   // Validate blogId and find the blog post by its ID
-  const blog = blogIds.includes(blogId)
+  const blog = blogIds.includes(blogId as string)
     ? blogData.find((b) => b.id === blogId)
     : null;
 
