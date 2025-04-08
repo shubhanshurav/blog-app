@@ -21,7 +21,9 @@ export async function generateMetadata({
   };
 }
 
-const BlogPage = ({ params }: { params: { blogId: string } }) => {
+const BlogPage = async ({ params }: { params: { blogId: string } }) => {
+  const { blogId } = await params;
+
   const blogIds = [
     "the-future-of-web-development",
     "mastering-react-in-2023",
@@ -33,8 +35,8 @@ const BlogPage = ({ params }: { params: { blogId: string } }) => {
   ];
 
   // Validate blogId and find the blog post by its ID
-  const blog = blogIds.includes(params.blogId)
-    ? blogData.find((b) => b.id === params.blogId)
+  const blog = blogIds.includes(blogId)
+    ? blogData.find((b) => b.id === blogId)
     : null;
 
   // If no blog is found, render a 404-like message
