@@ -22,7 +22,7 @@ export async function generateMetadata({
 }
 
 const BlogPage = async ({ params }: { params: { blogId: string } }) => {
-  const { blogId } = await params;
+  const { blogId } = params;
 
   const blogIds = [
     "the-future-of-web-development",
