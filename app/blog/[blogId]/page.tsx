@@ -21,14 +21,11 @@ export async function generateMetadata({
   };
 }
 
-// Fixing prop types
 interface BlogPageProps {
   params: { blogId: string };
 }
 
 const BlogPage: React.FC<BlogPageProps> = ({ params }) => {
-  const { blogId } = params;
-
   const blogIds = [
     "the-future-of-web-development",
     "mastering-react-in-2023",
@@ -39,12 +36,10 @@ const BlogPage: React.FC<BlogPageProps> = ({ params }) => {
     "devops-for-developers",
   ];
 
-  // Validate blogId and find the blog post by its ID
-  const blog = blogIds.includes(blogId)
-    ? blogData.find((b) => b.id === blogId)
+  const blog = blogIds.includes(params.blogId)
+    ? blogData.find((b) => b.id === params.blogId)
     : null;
 
-  // If no blog is found, render a 404-like message
   if (!blog) {
     return <div className="p-4 text-center">Blog not found!</div>;
   }
