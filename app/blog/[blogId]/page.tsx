@@ -26,7 +26,7 @@ interface BlogPageProps {
   params: { blogId: string };
 }
 
-const BlogPage:React.FC<BlogPageProps> = async ({params}) => {
+const BlogPage: React.FC<BlogPageProps> = ({ params }) => {
   const { blogId } = params;
 
   const blogIds = [
