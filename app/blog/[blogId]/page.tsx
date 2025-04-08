@@ -21,7 +21,12 @@ export async function generateMetadata({
   };
 }
 
-const BlogPage = async ({ params }: { params: { blogId: string } }) => {
+// Fixing prop types
+interface BlogPageProps {
+  params: { blogId: string };
+}
+
+const BlogPage: React.FC<BlogPageProps> = async ({params}) => {
   const { blogId } = params;
 
   const blogIds = [
